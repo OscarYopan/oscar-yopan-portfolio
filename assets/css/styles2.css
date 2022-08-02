@@ -303,6 +303,7 @@ img{
 
 .home__blob-img{
     width: 170px;
+    clip-path: circle();
 }
 
 .home__data{
@@ -561,17 +562,18 @@ img{
     transform: rotate(-180deg);
 }
 
-.skills-icon {
+/* .skills-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     font-size: 2rem;
 }
 
 .fa-brands {
     font-size: 6rem;
     color: var(--first-color);
-}
+} */
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
@@ -948,10 +950,12 @@ img{
     bottom: 5rem;
     background-color: var(--first-color);
     opacity: .8;
-    padding: 0 .3rem;
+    padding: 0 .2rem;
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
+    font-size: 2rem;
+    color: white;
 }
 
 .scrollup:hover{
