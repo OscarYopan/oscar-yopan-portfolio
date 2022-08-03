@@ -562,18 +562,19 @@ img{
     transform: rotate(-180deg);
 }
 
-/* .skills-icon {
+.skills-icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    font-size: 2rem;
+    font-size: 2rem;    
 }
 
 .fa-brands {
     font-size: 6rem;
     color: var(--first-color);
-} */
+    margin: 2rem 2rem;
+}
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
