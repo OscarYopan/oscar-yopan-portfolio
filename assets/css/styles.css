@@ -562,7 +562,7 @@ img{
     transform: rotate(-180deg);
 }
 
-.skills-icon {
+/* .skills-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -574,7 +574,7 @@ img{
     font-size: 6rem;
     color: var(--first-color);
     margin: 2rem 2rem;
-}
+} */
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
@@ -811,7 +811,7 @@ img{
 }
 
 /*==================== PROJECT IN MIND ====================*/
-.project{
+/* .project{
     text-align: center;
 }
 
@@ -837,7 +837,7 @@ img{
 .project__img{
     width: 232px;
     justify-self: center;
-}
+} */
 
 /*==================== TESTIMONIAL ====================*/
 /* will be added later if needed */
