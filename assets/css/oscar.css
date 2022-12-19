@@ -1,57 +1,83 @@
-* {
+/*Reset*/
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
+/*Default*/
+html{
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 
-body {
-  background-color: #606060;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+body{
+  background-color: #222;
+  color: white;
+  padding-bottom: 5rem;
 }
 
-header {
-  position: absolute;
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav .logo a {
+  font-size: 3rem;
+  color: darkcyan;
+}
+
+.nav {
+  position: fixed;
+  background-color: #222;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 8%;
-  background-color: white;
+  transition: all .3s ease-in-out;
 }
 
-header .nav {
+.nav .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 100%;
-  width: 100%;
+  align-items: center;
+  padding: 2rem 0;
+  transition: all .3s ease-in-out;
 }
 
-header .nav_logo {
-  font-size: 2rem;
-  color: black;
-}
-
-header ul {
-  list-style-type: none;
+.nav ul {
   display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
   font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  padding: .7rem 1.5rem;
+  transition: all .3s ease-in-out;
 }
 
-header ul li a {
-  text-decoration: none;
+.nav.active {
+  background-color: white;
+  box-shadow: 0 .2rem 1rem rgb(0, 0, 0, 0.3);
 }
 
-header a {
-  text-decoration: none;
+.nav.active a {
+  color: #222;
+}
+
+.nav.active .container {
+  padding: 1rem 0;
+}
+
+.nav a.current {
+  color: palevioletred;
+}
+
+.nav a:hover {
+  color: darkcyan;
 }
