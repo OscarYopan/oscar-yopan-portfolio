@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  
+}
+
 /*Default*/
 html{
   font-family: 'Roboto', sans-serif;
@@ -17,7 +21,7 @@ body{
   padding-bottom: 5rem;
 }
 
-.container {
+.nav-container {
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -29,14 +33,14 @@ body{
 
 .nav {
   position: fixed;
-  background-color: #222;
+  background-color: #606060;
   top: 0;
   left: 0;
   right: 0;
   transition: all .3s ease-in-out;
 }
 
-.nav .container {
+.nav .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +74,7 @@ body{
   color: #222;
 }
 
-.nav.active .container {
+.nav.active .nav-container {
   padding: 1rem 0;
 }
 
