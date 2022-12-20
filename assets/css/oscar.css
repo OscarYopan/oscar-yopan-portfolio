@@ -128,14 +128,13 @@ nav #logo i {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: beige;
   padding-top: 10rem;
 }
 
 .home .social {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .home .social a {
@@ -155,6 +154,7 @@ nav #logo i {
 .home .me {
   max-width: 40rem;
   margin: 0 8rem;
+  color: var(--text-color);
 }
 
 .home .me .title {
@@ -180,14 +180,19 @@ nav #logo i {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
+  position: relative;
 }
 
 .home .oscar-pic::before {
-  content: '';
-  height: 40rem;
-  width: 40rem;
-  z-index: 10;
+  content: ' ';
+  height: 34rem;
+  width: 34rem;
   background-color: var(--first-color);
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  z-index: -10;
+  border-radius: 0px 90px 0px 90px;
 }
 
 .about {
