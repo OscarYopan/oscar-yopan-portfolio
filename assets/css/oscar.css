@@ -113,25 +113,48 @@ nav #logo i {
 
 .home {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   background-color: beige;
   padding-top: 10rem;
 }
 
-.home .title {
-  font-size: 5rem;
+.home .social {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+}
+
+.home .me {
+  max-width: 40rem;
+  margin: 0 8rem;
+}
+
+.home .me .title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.home .me .subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home .me .presentation {
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
 .home .oscar-pic {
-  height: 10rem;
-  width: 10rem;
-  content: '';
+  height: 30rem;
+  width: 30rem;
   background-image: url(../../assets/img/oscar.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .about {
@@ -156,4 +179,27 @@ nav #logo i {
   height: 100vh;
   width: 100%;
   background-color: lightblue;
+}
+
+/* ----------- Multiples Uses Stuffs -----------*/
+
+/* button */
+.button {
+  background-color: var(--first-color);
+  padding: 2rem 4rem;
+  font-family: inherit;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 80%;
+}
+
+.button:active {
+  transform: scale(.98);
 }
