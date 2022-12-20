@@ -40,9 +40,19 @@ body{
   margin: 0 auto;
 }
 
+.nav #logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav .logo a {
   font-size: 3rem;
   color: var(--first-color);
+}
+
+nav #logo i {
+  color: var(--first-color);
+  font-size: 3rem;
 }
 
 .nav {
@@ -102,15 +112,26 @@ body{
 }
 
 .home {
+  display: flex;
   height: 100vh;
   width: 100%;
   background-color: beige;
+  padding-top: 10rem;
 }
 
 .home .title {
-  padding-top: 20rem;
-  font-size: 3rem;
-  color: white;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home .oscar-pic {
+  height: 10rem;
+  width: 10rem;
+  content: '';
+  background-image: url(../../assets/img/oscar.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about {
