@@ -211,25 +211,35 @@ nav #logo i {
 }
 
 .about {
-  height: 100vh;
+  height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
   background-color: cadetblue;
 }
 
+.about .div-title {
+  text-align: center;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .skills {
-  height: 100vh;
+  height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
   background-color: aquamarine;
 }
 
 .portifolio {
-  height: 100vh;
+  height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
   background-color: coral;
 }
 
 .contact {
-  height: 100vh;
+  height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
   background-color: lightblue;
 }
