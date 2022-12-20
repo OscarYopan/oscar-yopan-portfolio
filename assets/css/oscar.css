@@ -16,13 +16,13 @@
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
+    /* --text-color: hsl(var(--hue-color), 8%, 45%); */
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #FFF;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    /* --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%); */
+    /* --container-color: #FFF; */
+    /* --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%); */
 
     /* Dark Theme */
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -52,6 +52,7 @@ body{
   left: 0;
   right: 0;
   z-index: 100;
+  color: var(--title-color);
   transition: all .3s ease-in-out;
 }
 
@@ -67,7 +68,6 @@ body{
 
 .nav .logo a {
   font-size: 3rem;
-  color: var(--first-color);
 }
 
 nav #logo i {
@@ -160,6 +160,7 @@ nav #logo i {
 .home .me .title {
   font-size: 4rem;
   margin-bottom: 2rem;
+  color: var(--title-color);
 }
 
 .home .me .subtitle {
@@ -193,6 +194,20 @@ nav #logo i {
   left: -2rem;
   z-index: -10;
   border-radius: 0px 90px 0px 90px;
+  animation: rotation 3s infinite ease-in;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(-0deg);
+  }
+
 }
 
 .about {
