@@ -195,21 +195,7 @@ nav #logo i {
   z-index: -10;
   border-radius: 0px 90px 0px 90px;
   animation: rotation 3s infinite ease-in;
-  transform: rotate(45deg);
 }
-
-/* @keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: scale(-0deg);
-  }
-
-} */
 
 .about {
   height: 100vh; /*Vai precisar ser definida por JS*/
@@ -219,7 +205,6 @@ nav #logo i {
 
 .about .div-title {
   text-align: center;
-  padding-top: 10rem;
 }
 
 .about .title {
@@ -244,7 +229,7 @@ nav #logo i {
   margin-right: 14rem;
 }
 
-.about .oscar-pic::after {
+.about .oscar-pic::before {
   content: '';
   height: 34rem;
   width: 34rem;
@@ -252,8 +237,7 @@ nav #logo i {
   position: absolute;
   top: -2rem;
   left: -2rem;
-  border-radius: 0px 90px 0px 90px;
-  transform: rotate(45deg);
+  border-radius: 90px 0px 90px 0px;
 }
 
 .skills {
@@ -296,3 +280,17 @@ nav #logo i {
 .button:active {
   opacity: 90%;
 }
+
+/*Animations*/
+/* @keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(-0deg);
+  }
+
+} */

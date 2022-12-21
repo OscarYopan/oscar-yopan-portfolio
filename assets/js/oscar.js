@@ -1,5 +1,5 @@
+// Nav Animations
 const nav = document.querySelector('.nav')
-
 window.addEventListener('scroll', fixNav)
 
 function fixNav() {
@@ -8,4 +8,11 @@ function fixNav() {
   } else {
     nav.classList.remove('active')
   }
+}
+
+//Section Height Defination
+function sectionHeight() {
+  let height = window.height
+
+  console.log(height)
 }
