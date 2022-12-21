@@ -198,17 +198,24 @@ nav #logo i {
 }
 
 .about {
-  height: 758px; /*Vai precisar ser definida por JS*/
+  height: 100vh;
   width: 100%;
-  background-color: cadetblue;
-}
-
-.about .div-title {
-  text-align: center;
+  background-color: var(--body-color);
+  padding-top: 10rem;
 }
 
 .about .title {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.about .subtitle {
+  font-size: 2rem;  
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
 }
 
 .about .container {
@@ -226,18 +233,30 @@ nav #logo i {
   background-repeat: no-repeat;
   border-radius: 50%;
   position: relative;
-  margin-right: 14rem;
 }
 
 .about .oscar-photo::before {
-  content: '';
+  content: ' ';
   height: 34rem;
   width: 34rem;
   background-color: var(--first-color);
   position: absolute;
   top: -2rem;
   left: -2rem;
-  border-radius: 90px 0px 90px 0px;
+  z-index: -10;
+  border-radius: 0px 90px 0px 90px;
+  animation: rotation 3s infinite ease-in;
+}
+
+.about .me {
+  max-width: 40rem;
+  margin: 0 8rem;
+  color: var(--text-color);
+}
+
+.about .me .presentation {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .skills {
