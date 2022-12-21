@@ -171,6 +171,7 @@ nav #logo i {
 .home .me .presentation {
   font-size: 1.6rem;
   margin-bottom: 4rem;
+  text-align: justify;
 }
 
 .home .oscar-pic {
@@ -257,6 +258,7 @@ nav #logo i {
 .about .me .presentation {
   font-size: 1.6rem;
   margin-bottom: 4rem;
+  text-align: justify;
 }
 
 .skills {
