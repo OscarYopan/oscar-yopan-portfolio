@@ -198,7 +198,7 @@ nav #logo i {
 }
 
 .about {
-  height: 100vh; /*Vai precisar ser definida por JS*/
+  height: 758px; /*Vai precisar ser definida por JS*/
   width: 100%;
   background-color: cadetblue;
 }
@@ -217,7 +217,7 @@ nav #logo i {
   justify-content: center;
 }
 
-.about .oscar-pic {
+.about .oscar-photo {
   height: 30rem;
   width: 30rem;
   background-image: url(../../assets/img/perfil.jpeg);
@@ -229,7 +229,7 @@ nav #logo i {
   margin-right: 14rem;
 }
 
-.about .oscar-pic::before {
+.about .oscar-photo::before {
   content: '';
   height: 34rem;
   width: 34rem;

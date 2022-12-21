@@ -11,8 +11,18 @@ function fixNav() {
 }
 
 //Section Height Defination
-function sectionHeight() {
-  let height = window.height
+sectionHeight()
 
-  console.log(height)
+function sectionHeight() {
+  const height =
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight
+
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth
+
+  console.log(height, width)
 }
