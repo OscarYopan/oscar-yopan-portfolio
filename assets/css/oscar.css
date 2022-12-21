@@ -170,7 +170,7 @@ nav #logo i {
 
 .home .me .presentation {
   font-size: 1.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .home .oscar-pic {
@@ -200,7 +200,6 @@ nav #logo i {
 .about {
   height: 100vh;
   width: 100%;
-  background-color: var(--body-color);
   padding-top: 10rem;
 }
 
@@ -233,6 +232,7 @@ nav #logo i {
   background-repeat: no-repeat;
   border-radius: 50%;
   position: relative;
+  margin: 0 8rem;
 }
 
 .about .oscar-photo::before {
@@ -243,9 +243,9 @@ nav #logo i {
   position: absolute;
   top: -2rem;
   left: -2rem;
-  z-index: -10;
+  z-index: -1;
   border-radius: 0px 90px 0px 90px;
-  animation: rotation 3s infinite ease-in;
+  transform: rotate(-90deg);
 }
 
 .about .me {
@@ -256,7 +256,7 @@ nav #logo i {
 
 .about .me .presentation {
   font-size: 1.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .skills {
