@@ -354,7 +354,7 @@ nav #logo i {
   border: none;
   border-radius: 2rem;
   position: absolute;
-  top: 66.66%;
+  top: 50%;
   left: 0;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.6);
