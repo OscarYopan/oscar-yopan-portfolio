@@ -102,12 +102,12 @@ nav #logo i {
 }
 
 .nav.active {
-  background-color: white;
+  background-color: #222;
   box-shadow: 0 .2rem 1rem rgb(0, 0, 0, 0.3);
 }
 
 .nav.active a {
-  color: #222;
+  color: var(--title-color);
 }
 
 .nav.active .nav-container {
@@ -297,13 +297,13 @@ nav #logo i {
 .portifolio {
   height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
-  background-color: coral;
+  background-color: rgb(199, 60, 10);
 }
 
 .contact {
   height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
-  background-color: lightblue;
+  background-color: rgb(12, 100, 129);
 }
 
 /* ----------- Multiples Uses Stuffs -----------*/
@@ -313,7 +313,7 @@ nav #logo i {
   background-color: var(--first-color);
   padding: 1.5rem 3rem;
   font-family: inherit;
-  color: white;
+  color: var(--text-color);
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -327,6 +327,7 @@ nav #logo i {
 
 .button:active {
   opacity: 90%;
+  color: var(--title-color);
 }
 
 /*Animations*/
