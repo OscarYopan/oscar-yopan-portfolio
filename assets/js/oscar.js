@@ -27,7 +27,7 @@ function sectionHeight() {
   console.log(height, width)
 }
 
-//Potifolio hover
+//Portifolio hover
 const projectHover = document.querySelector('.project')
 
 projectHover.addEventListener('click', () => {

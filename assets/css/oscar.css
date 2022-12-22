@@ -102,7 +102,7 @@ nav #logo i {
 }
 
 .nav.active {
-  background-color: #222;
+  background-color: var(--container-color);
   box-shadow: 0 .2rem 1rem rgb(0, 0, 0, 0.3);
 }
 
@@ -194,7 +194,7 @@ nav #logo i {
   top: -2rem;
   left: -2rem;
   z-index: -10;
-  border-radius: 0px 90px 0px 90px;
+  border-radius: 20% 80% 11% 89% / 65% 40% 60% 35%;
   animation: rotation 3s infinite ease-in;
 }
 
@@ -245,7 +245,7 @@ nav #logo i {
   top: -2rem;
   left: -2rem;
   z-index: -1;
-  border-radius: 0px 90px 0px 90px;
+  border-radius: 20% 80% 11% 89% / 65% 40% 60% 35%;
   transform: rotate(-90deg);
 }
 
@@ -286,6 +286,8 @@ nav #logo i {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 60rem;
+  background-color: var(--container-color);
+  border-radius: 50% 50% 8% 92% / 55% 90% 10% 45%;
 }
 
 .skills .skill {
@@ -360,8 +362,9 @@ nav #logo i {
 
 .portifolio .portifolio-container .project .shade.open {
   /* height: 30rem; */
-  top: 0;
-  animation: heightUp 2s linear; 
+  /* top: 0; */
+  transform: scaleY(2);
+  /* animation: heightUp 2s linear;  */
 }
 
 @keyframes heightUp {
