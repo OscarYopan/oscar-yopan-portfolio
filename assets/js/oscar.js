@@ -27,4 +27,12 @@ function sectionHeight() {
   console.log(height, width)
 }
 
-//Portifolio
+//Potifolio hover
+const projectHover = document.querySelector('.project')
+
+projectHover.addEventListener('click', () => {
+  const shade = document.querySelector('.shade')
+  shade.classList.toggle('open')
+})
+
+//Portifolio Github Create
