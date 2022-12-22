@@ -268,6 +268,16 @@ nav #logo i {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.skills h1 {
+  color: var(--title-color);
+  font-size: 5rem;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .skills .container {
@@ -297,7 +307,18 @@ nav #logo i {
 .portifolio {
   height: 100vh; /*Vai precisar ser definida por JS*/
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(199, 60, 10);
+}
+
+.portifolio .portifolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80rem;
+  background-color: cadetblue;
 }
 
 .contact {
