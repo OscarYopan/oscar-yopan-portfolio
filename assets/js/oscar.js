@@ -37,31 +37,33 @@ function fixNav() {
 
 //******************************* Portifolio Github Create ***********
 
-const APIURL = 'https://api.github.com/users/'
+// const APIURL = 'https://api.github.com/users/'
+// var axios = require('axios')
 
 // const form = document.querySelector('#form')
 // const search = document.querySelector('#search')
 // const main = document.querySelector('#main')
 
-async function getUser(username) {
-  const { data } = await axios.get(APIURL + username)
+// async function getUser(username) {
+//   const { data } = await axios.get(APIURL + username)
 
-  createProject(data)
-  getRepos(username)
-  console.log(username)
-}
+// createProject(data)
+// getRepos(username)
+// console.log(234)
+// console.log(username)
+//}
 
-async function getRepos(username) {
-  try {
-    const { data } = await axios.get(APIURL + username + '/repos?sort=created')
+// async function getRepos(username) {
+//   try {
+//     const { data } = await axios.get(APIURL + username + '/repos?sort=created')
 
-    addReposToCard(data)
-  } catch (err) {
-    if (err.response.status == 404) {
-      createErrorCard('No profile with this username')
-    }
-  }
-}
+//     addReposToCard(data)
+//   } catch (err) {
+//     if (err.response.status == 404) {
+//       createErrorCard('No profile with this username')
+//     }
+//   }
+// }
 
 // function createProject(user) {
 //   const cardHTML = `
@@ -109,11 +111,14 @@ async function getRepos(username) {
 //       });
 // }
 
-window.onload = function OscarYopan() {
-  // e.preventDefault()
-  // const user = 'OscarYopan'
-  // if (user) {
-  //   getUser(user)
-  // }
-  console.log(123)
-}
+// window.onload = function OscarYopan() {
+//   const user = 'OscarYopan'
+//   if (user) {
+//     getUser(user)
+//   }
+//   console.log(123)
+// }
+
+//
+
+// **************************
