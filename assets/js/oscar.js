@@ -47,8 +47,9 @@ async function getUser(username) {
   try {
     const { data } = await axios.get(APIURL + username)
 
-    createUserCard(data)
+    createProject(data)
     getRepos(username)
+    console.log(username)
   } catch (err) {
     if (err.response.status == 404) {
       createErrorCard('No profile with this username')
@@ -68,7 +69,7 @@ async function getRepos(username) {
   }
 }
 
-// function createUserCard(user) {
+// function createProject(user) {
 //   const cardHTML = `
 //   <div class="card">
 //       <div class="pohto">
@@ -89,15 +90,14 @@ async function getRepos(username) {
 //   main.innerHTML = cardHTML
 // }
 
-// function createErrorCard(msg) {
-//   const cardHTML = `
-//     <div class="card">
-//       <h1>${msg}</h1>
-//     </div>
-//   `
-
-//   main.innerHTML = cardHTML
-// }
+function createErrorCard(msg) {
+  const cardHTML = `
+    <div class="card">
+      <h1>${msg}</h1>
+    </div>
+  `
+  main.innerHTML = cardHTML
+}
 
 // function addReposToCard(repos) {
 //   const reposEl = document.getElementById('repos')
@@ -115,14 +115,12 @@ async function getRepos(username) {
 //       });
 // }
 
-// form.addEventListener('submit', e => {
-//   e.preventDefault()
+document.onload = () => {
+  e.preventDefault()
 
-//   const user = search.value
+  const user = 'OscarYopan'
 
-//   if (user) {
-//     getUser(user)
-
-//     search.value = ''
-//   }
-// })
+  if (user) {
+    getUser(user)
+  }
+}
