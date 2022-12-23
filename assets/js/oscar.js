@@ -12,6 +12,31 @@ function fixNav() {
   }
 }
 
+//*********************************** ScrollReveal ******************
+const scrollReveal = scrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .fa-brands, #home .title, #home .subtitle, #home .presentation. #home .button,
+  #about .title, #about .subtitle, #about .oscar-photo, #about .presentation, #about .button
+  #services header, #services .card,
+  #testimonials header, #testimonials .testimonials
+  #contact .text, #contact .links,
+  footer .brand, footer .social
+  `,
+  { interval: 100 }
+)
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
+  activateMenuAtCurrentSection()
+})
+
 //*************************** Section Height Defination ************
 // sectionHeight()
 
