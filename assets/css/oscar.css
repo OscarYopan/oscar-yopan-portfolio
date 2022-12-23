@@ -333,6 +333,15 @@ body{
   margin-bottom: 2rem;
 }
 
+.portifolio p a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.portifolio p a:hover {
+  color: var(--first-color-alt);
+}
+
 .portifolio .portifolio-container {
   display: flex;
   align-items: center;
