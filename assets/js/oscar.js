@@ -44,17 +44,11 @@ const APIURL = 'https://api.github.com/users/'
 // const main = document.querySelector('#main')
 
 async function getUser(username) {
-  try {
-    const { data } = await axios.get(APIURL + username)
+  const { data } = await axios.get(APIURL + username)
 
-    createProject(data)
-    getRepos(username)
-    console.log(username)
-  } catch (err) {
-    if (err.response.status == 404) {
-      createErrorCard('No profile with this username')
-    }
-  }
+  createProject(data)
+  getRepos(username)
+  console.log(username)
 }
 
 async function getRepos(username) {
@@ -90,14 +84,14 @@ async function getRepos(username) {
 //   main.innerHTML = cardHTML
 // }
 
-function createErrorCard(msg) {
-  const cardHTML = `
-    <div class="card">
-      <h1>${msg}</h1>
-    </div>
-  `
-  main.innerHTML = cardHTML
-}
+// function createErrorCard(msg) {
+//   const cardHTML = `
+//     <div class="card">
+//       <h1>${msg}</h1>
+//     </div>
+//   `
+//   main.innerHTML = cardHTML
+// }
 
 // function addReposToCard(repos) {
 //   const reposEl = document.getElementById('repos')
@@ -115,12 +109,11 @@ function createErrorCard(msg) {
 //       });
 // }
 
-document.onload = () => {
-  e.preventDefault()
-
-  const user = 'OscarYopan'
-
-  if (user) {
-    getUser(user)
-  }
+window.onload = function OscarYopan() {
+  // e.preventDefault()
+  // const user = 'OscarYopan'
+  // if (user) {
+  //   getUser(user)
+  // }
+  console.log(123)
 }
