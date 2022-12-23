@@ -1,4 +1,4 @@
-// Nav Animation
+// *************************** Nav Animation ***********************
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll', fixNav)
 
@@ -10,38 +10,38 @@ function fixNav() {
   }
 }
 
-//Section Height Defination
-sectionHeight()
+//*************************** Section Height Defination ************
+// sectionHeight()
 
-function sectionHeight() {
-  const height =
-    window.innerHeight ||
-    document.documentElement.clientHeight ||
-    document.body.clientHeight
+// function sectionHeight() {
+//   const height =
+//     window.innerHeight ||
+//     document.documentElement.clientHeight ||
+//     document.body.clientHeight
 
-  const width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth
+//   const width =
+//     window.innerWidth ||
+//     document.documentElement.clientWidth ||
+//     document.body.clientWidth
 
-  console.log(height, width)
-}
+//   console.log(height, width)
+// }
 
-//Portifolio hover
-const projectHover = document.querySelector('.project')
+//******************************** Portifolio hover *****************
+// const projectHover = document.querySelector('.project')
 
-projectHover.addEventListener('click', () => {
-  const shade = document.querySelector('.shade')
-  shade.classList.toggle('open')
-})
+// projectHover.addEventListener('click', () => {
+//   const shade = document.querySelector('.shade')
+//   shade.classList.toggle('open')
+// })
 
-//Portifolio Github Create
+//******************************* Portifolio Github Create ***********
 
 const APIURL = 'https://api.github.com/users/'
 
-const form = document.querySelector('#form')
-const search = document.querySelector('#search')
-const main = document.querySelector('#main')
+// const form = document.querySelector('#form')
+// const search = document.querySelector('#search')
+// const main = document.querySelector('#main')
 
 async function getUser(username) {
   try {
