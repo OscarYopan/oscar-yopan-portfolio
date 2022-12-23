@@ -1,3 +1,5 @@
+// const { default: axios } = require('axios')
+
 // *************************** Nav Animation ***********************
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll', fixNav)
@@ -37,88 +39,18 @@ function fixNav() {
 
 //******************************* Portifolio Github Create ***********
 
-// const APIURL = 'https://api.github.com/users/'
-// var axios = require('axios')
+// const APIURL = 'https://api.github.com/users/OscarYopan/repos'
 
-// const form = document.querySelector('#form')
-// const search = document.querySelector('#search')
-// const main = document.querySelector('#main')
+// getRepos()
 
-// async function getUser(username) {
-//   const { data } = await axios.get(APIURL + username)
-
-// createProject(data)
-// getRepos(username)
-// console.log(234)
-// console.log(username)
-//}
-
-// async function getRepos(username) {
-//   try {
-//     const { data } = await axios.get(APIURL + username + '/repos?sort=created')
-
-//     addReposToCard(data)
-//   } catch (err) {
-//     if (err.response.status == 404) {
-//       createErrorCard('No profile with this username')
-//     }
-//   }
+// function getRepos(repo) {
+//   axios
+//     .get(APIURL)
+//     .then(response => console.log(response))
+//     .catch(err => console.log(err))
 // }
 
-// function createProject(user) {
-//   const cardHTML = `
-//   <div class="card">
-//       <div class="pohto">
-//         <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
-//       </div>
-//       <div class="user-info">
-//         <h2>${user.name}</h2>
-//         <p>${user.bio}</p>
-//         <ul>
-//           <li>${user.followers} <strong>Followers</strong></li>
-//           <li>${user.following}  <strong>Following</strong></li>
-//           <li>${user.public_repos}  <strong>Repos</strong></li>
-//         </ul>
-//         <div id="repos"></div>
-//       </div>
-//     </div>
-//   `
-//   main.innerHTML = cardHTML
-// }
-
-// function createErrorCard(msg) {
-//   const cardHTML = `
-//     <div class="card">
-//       <h1>${msg}</h1>
-//     </div>
-//   `
-//   main.innerHTML = cardHTML
-// }
-
-// function addReposToCard(repos) {
-//   const reposEl = document.getElementById('repos')
-//     repos
-//       .slice(0, 5)
-//       .forEach(repo => {
-//         const repoEl = document.createElement('a')
-
-//         repoEl.classList.add('repo')
-//         repoEl.href = repo.html_url
-//         repoEl.target = '_blank'
-//         repoEl.innerText = repo.name
-
-//         reposEl.appendChild(repoEl)
-//       });
-// }
-
-// window.onload = function OscarYopan() {
-//   const user = 'OscarYopan'
-//   if (user) {
-//     getUser(user)
-//   }
-//   console.log(123)
-// }
-
-//
-
-// **************************
+fetch('https://api.github.com/users/OscarYopan/repos')
+  .then(res => res.json())
+  // .then(data => setRepo(data))
+  .then(data => console.log(data))
