@@ -68,13 +68,20 @@ body{
 
 .nav .logo a {
   font-size: 3rem;
+  background-size: 300%;
+  background-image: linear-gradient(45deg, #05AFF2, #04B2D9, #F2DAC4, #F26B6B, #F29B9B, #F2DAC4, #04B2D9, #05AFF2);
+  animation: textAnimation 5s linear infinite;
+  display: inline-block;
+  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-nav #logo i {
-  color: var(--first-color);
-  font-size: 3rem;
+@keyframes textAnimation {
+  to {
+    background-position: 300% center;
+  }
 }
-
 
 .nav .nav-container {
   display: flex;
@@ -334,6 +341,7 @@ nav #logo i {
   max-width: 100%;
   padding: 0 10rem;
   background-color: #140828;
+  border: none;
 }
 
 .portifolio .portifolio-container .project {
@@ -353,12 +361,12 @@ nav #logo i {
   height: 40%;
   width: 35rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 0 0 2rem 2rem;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .portifolio .portifolio-container .project .shade h5 {
