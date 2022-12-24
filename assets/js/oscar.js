@@ -1,5 +1,3 @@
-// const { default: axios } = require('axios')
-
 // *************************** Nav Animation ***********************
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll', fixNav)
@@ -63,23 +61,19 @@ function fixNav() {
 
 //******************************* Portifolio Github Create ***********
 
-// const APIURL = 'https://api.github.com/users/OscarYopan/repos'
-
-// getRepos()
-
-// function getRepos(repo) {
-//   axios
-//     .get(APIURL)
-//     .then(response => console.log(response))
-//     .catch(err => console.log(err))
-// }
-
 fetch('https://api.github.com/users/OscarYopan/repos')
   .then(res => res.json())
   // .then(data => setRepo(data))
   .then(data => console.log(data))
 
-createPortifolio()
+teste()
+
+function teste() {
+  for (var i = 0; i < 4; i++) {
+    console.log('Teste')
+    createPortifolio()
+  }
+}
 
 function createPortifolio() {
   const portifolioContainer = document.querySelector('.portifolio-container')
