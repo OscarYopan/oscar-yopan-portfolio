@@ -31,8 +31,11 @@
     --body-color: hsl(var(--hue-color), 28%, 12%);
     --body-color: #191627;
     --container-color: hsl(var(--hue-color), 29%, 16%);
+    --container-color: #211D35;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-bar-color: #716C89;
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --scroll-thumb-color: #545167;
 }
 
 html{
@@ -68,7 +71,7 @@ body{
 .nav .logo a {
   font-size: 3rem;
   background-size: 300%;
-  background-image: linear-gradient(45deg, #05AFF2, #04B2D9, #F2DAC4, #F26B6B, #F29B9B, #F2DAC4, #04B2D9, #05AFF2);
+  background-image: linear-gradient(45deg, var(--first-color), var(--first-color-alt), var(--first-color-lighter), var(--first-color-lighter), var(--first-color-alt), var(--first-color));
   animation: textAnimation 5s linear infinite;
   display: inline-block;
   color: white;
@@ -348,7 +351,7 @@ body{
   flex-wrap: wrap;
   max-width: 100%;
   padding: 0 10rem;
-  background-color: #140828;
+  background-color: var(--first-color-second);
   border: none;
 }
 
