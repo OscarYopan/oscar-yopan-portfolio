@@ -314,7 +314,7 @@ body{
 }
 
 .portifolio {
-  height: 100vh; /*Vai precisar ser definida por JS*/
+  height: 100vh;
   width: 100%;
   background-color: var(--container-color);
   text-align: center;
@@ -412,17 +412,6 @@ body{
 .portifolio .portifolio-container .project .shade .icon i:active {
   transform: scale(1.1);
 }
-
-/* .portifolio .portifolio-container .project .shade.open {
-  transform-origin: bottom;
-  animation: heightUp 0.3s linear;
-} */
-
-/* @keyframes heightUp {
-  0% {
-    transform: scaley(0);
-  }
-} */
 
 /* ----------- Multiples Uses Stuffs -----------*/
 
