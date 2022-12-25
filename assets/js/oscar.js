@@ -66,30 +66,48 @@ fetch('https://api.github.com/users/OscarYopan/repos')
   // .then(data => setRepo(data))
   .then(data => console.log(data))
 
-teste()
+// teste()
 
-function teste() {
-  for (var i = 0; i < 3; i++) {
-    console.log('Teste')
-    createPortifolio()
+// function teste() {
+//   for (var i = 0; i < 3; i++) {
+//     console.log('Teste')
+//     createPortifolio()
+//   }
+// }
+
+fetchPokemons()
+
+const fetchPokemons = async () => {
+  for (let i = 1; i <= pokeomCount; i++) {
+    await getPokemon(i)
   }
+}
+
+const getRepo = async id => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+  const res = await fetch(url)
+  const data = await res.json()
+  createPokemonCard(data)
+  console.log(data)
 }
 
 function createPortifolio() {
   const portifolioContainer = document.querySelector('.portifolio-container')
+  const project = document.createElement('div')
+  project.classList.add('project')
 
-  portifolioContainer.innerHTML = `
-    <div class="project">
-      <div class="shade">
-        <div class="icons">
-          <h5 class="project-title">Projeto 01</h5>
-          <p class="project-description">Esse é uma projeto base e fake, feito para criar o desgin da minha pagina de portifolio.</p>
-          <div class="icon">
-            <i class="fa-solid fa-desktop"></i>
-            <i class="fa-brands fa-github"></i>
-          </div>
+  project.innerHTML = `
+    <div class="shade">
+      <div class="icons">
+        <h5 class="project-title">Projeto 01</h5>
+        <p class="project-description">Esse é uma projeto base e fake, feito para criar o desgin da minha pagina de portifolio.</p>
+        <div class="icon">
+          <i class="fa-solid fa-desktop"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
       </div>
-  </div>
+    </div>
   `
+
+  portifolioContainer.appendChild(project)
 }
