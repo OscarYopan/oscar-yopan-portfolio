@@ -6,35 +6,20 @@
 
 :root {
     /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color: #6E57E0;
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-alt: #5A43CB;
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --first-color-lighter: #C1B6FC;
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --text-color-light: #A19FAD;
 
     /* Dark Theme */
-    --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --first-color-second: #100E1B;
-    --title-color: hsl(var(--hue-color), 8%, 95%);
     --title-color: #F2F1F3;
-    --text-color: hsl(var(--hue-color), 8%, 75%);
     --text-color: #BCBAC4;
-    --input-color: hsl(var(--hue-color), 29%, 16%);
     --input-color: #211D35;
-    --body-color: hsl(var(--hue-color), 28%, 12%);
     --body-color: #191627;
-    --container-color: hsl(var(--hue-color), 29%, 16%);
     --container-color: #211D35;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-bar-color: #716C89;
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
     --scroll-thumb-color: #545167;
 }
 
@@ -349,7 +334,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 100%;
+  width: 100%;
   padding: 0 10rem;
   background-color: var(--first-color-second);
   border: none;
