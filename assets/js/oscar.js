@@ -84,7 +84,7 @@ const fetchPokemons = async () => {
 }
 
 const getRepo = async id => {
-  const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+  const url = `https://api.github.com/users/OscarYopan/repos${id}`
   const res = await fetch(url)
   const data = await res.json()
   createPokemonCard(data)
