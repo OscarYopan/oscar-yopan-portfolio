@@ -1,5 +1,5 @@
 function getApiGitHub() {
-  fetch('https://api.github.com/users/OscarYopan/repos')
+  fetch('https://api.github.com/users/OscarYopan/starred')
     .then(async res => {
       if (!res.ok) {
         throw new Error(res.status)
