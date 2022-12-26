@@ -341,27 +341,24 @@ body{
 }
 
 .portifolio .portifolio-container .project {
-  height: 30rem;
-  width: 35rem;
+  height: 225px;
+  width: 400px;
   border: none;
   border-radius: 2rem;
   background-color: var(--first-color-lighter);
   margin: 2rem;
   position: relative;
-  cursor: pointer;
 }
 
 .portifolio .portifolio-container .project iframe {
-  overflow: hidden;
   height: 100%;
   width: 100%;
   border-radius: 2rem;
-  size: cover;
 }
 
 .portifolio .portifolio-container .project .shade {
   height: 40%;
-  width: 35rem;
+  width: 100%;
   border: none;
   border-radius: 0 0 2rem 2rem;
   position: absolute;
