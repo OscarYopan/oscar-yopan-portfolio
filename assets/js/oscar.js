@@ -66,30 +66,30 @@ fetch('https://api.github.com/users/OscarYopan/repos')
   // .then(data => setRepo(data))
   .then(data => console.log(data))
 
-// teste()
+teste()
 
-// function teste() {
-//   for (var i = 0; i < 3; i++) {
-//     console.log('Teste')
-//     createPortifolio()
-//   }
-// }
-
-fetchPokemons()
-
-const fetchPokemons = async () => {
-  for (let i = 1; i <= pokeomCount; i++) {
-    await getPokemon(i)
+function teste() {
+  for (var i = 0; i < 3; i++) {
+    console.log('Teste')
+    createPortifolio()
   }
 }
 
-const getRepo = async id => {
-  const url = `https://api.github.com/users/OscarYopan/repos${id}`
-  const res = await fetch(url)
-  const data = await res.json()
-  createPokemonCard(data)
-  console.log(data)
-}
+// fetchPokemons()
+
+// const fetchPokemons = async () => {
+//   for (let i = 1; i <= pokeomCount; i++) {
+//     await getPokemon(i)
+//   }
+// }
+
+// const getRepo = async id => {
+//   const url = `https://api.github.com/users/OscarYopan/repos${id}`
+//   const res = await fetch(url)
+//   const data = await res.json()
+//   createPokemonCard(data)
+//   console.log(data)
+// }
 
 function createPortifolio() {
   const portifolioContainer = document.querySelector('.portifolio-container')
