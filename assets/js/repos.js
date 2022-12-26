@@ -15,6 +15,7 @@ function getApiGitHub() {
         project.classList.add('project')
 
         project.innerHTML = `
+          <iframe src="${item.homepage}" frameborder="0"></iframe>
           <div class="shade">
             <div class="icons">
               <h5 class="project-title">${item.name.toUpperCase()}</h5>

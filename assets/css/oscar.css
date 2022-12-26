@@ -345,12 +345,18 @@ body{
   width: 35rem;
   border: none;
   border-radius: 2rem;
-  background-image: url(../img/portfolio1.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: var(--first-color-lighter);
   margin: 2rem;
   position: relative;
   cursor: pointer;
+}
+
+.portifolio .portifolio-container .project iframe {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  size: cover;
 }
 
 .portifolio .portifolio-container .project .shade {
@@ -427,13 +433,4 @@ body{
 .button:active {
   opacity: 90%;
   color: var(--title-color);
-}
-
-/*--------------------------------*/
-
-iframe {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  border-radius: 2rem;
 }
