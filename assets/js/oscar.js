@@ -35,71 +35,17 @@ function fixNav() {
 // })
 
 //*************************** Section Height Defination ************
-// sectionHeight()
+sectionHeight()
 
-// function sectionHeight() {
-//   const height =
-//     window.innerHeight ||
-//     document.documentElement.clientHeight ||
-//     document.body.clientHeight
+function sectionHeight() {
+  const height =
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight
 
-//   const width =
-//     window.innerWidth ||
-//     document.documentElement.clientWidth ||
-//     document.body.clientWidth
-
-//   console.log(height, width)
-// }
-
-//******************************** Portifolio hover *****************
-// const projectHover = document.querySelector('.project')
-
-// projectHover.addEventListener('click', () => {
-//   const shade = document.querySelector('.shade')
-//   shade.classList.toggle('open')
-// })
-
-//******************************* Portifolio Github Create ***********
-
-// fetch('https://api.github.com/users/OscarYopan/repos')
-//   .then(res => res.json())
-//   // .then(data => setRepo(data))
-//   .then(data => console.log(data))
-
-// function setRepo(data) {
-//   console.log(data)
-//   for (var i = 0; i < 3; i++) {
-//     console.log('Teste')
-//     createPortifolio(data[i])
-//   }
-// }
-
-// teste()
-
-function teste() {
-  for (var i = 0; i < 3; i++) {
-    console.log('Teste')
-    createPortifolio()
-  }
-}
-
-function createPortifolio() {
-  const portifolioContainer = document.querySelector('.portifolio-container')
-  const project = document.createElement('div')
-  project.classList.add('project')
-
-  project.innerHTML = `
-    <div class="shade">
-      <div class="icons">
-        <h5 class="project-title">Project Name</h5>
-        <p class="project-description">Esse é uma projeto base e fake, feito para criar o desgin da minha pagina de portifolio.</p>
-        <div class="icon">
-          <i class="fa-solid fa-desktop"></i>
-          <i class="fa-brands fa-github"></i>
-        </div>
-      </div>
-    </div>
-  `
-
-  portifolioContainer.appendChild(project)
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth
+  console.log('H: ' + height, ', W: ' + width)
 }
