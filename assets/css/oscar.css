@@ -379,6 +379,11 @@ body{
   text-align: left;
 }
 
+.portifolio .portifolio-container .project .shade a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
 .portifolio .portifolio-container .project .shade .icon {
   font-size: 2rem;
   color: var(--first-color);
