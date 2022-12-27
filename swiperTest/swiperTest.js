@@ -1,6 +1,7 @@
 var swiper = new Swiper('.mySwiper', {
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    hide: true
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
   }
 })
