@@ -7,9 +7,11 @@ function getApiGitHub() {
     var data = await res.json()
 
     data.map(item => {
-      const portifolioContainer = document.querySelector('.swiper-wrapper')
+      const portifolioContainer = document.querySelector(
+        '.portifolio-container'
+      )
       const project = document.createElement('div')
-      project.classList.add('swiper-slide')
+      project.classList.add('project')
 
       project.innerHTML = `
           <iframe src="${item.homepage}" frameborder="0"></iframe>
