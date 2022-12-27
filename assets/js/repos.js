@@ -7,9 +7,7 @@ function getApiGitHub() {
     var data = await res.json()
 
     data.map(item => {
-      const portifolioContainer = document.querySelector(
-        '.portifolio-container'
-      )
+      const portifolioContainer = document.querySelector('.swiper')
       const project = document.createElement('div')
       project.classList.add('project')
 
