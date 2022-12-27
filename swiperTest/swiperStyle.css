@@ -1,0 +1,23 @@
+/* 'https://source.unsplash.com/random' */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #606060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+/* .swiper-slide {
+  background-color: #222;
+  background: url('https://source.unsplash.com/random') center center/cover no-repeat;
+  height: 225px;
+  width: 400px;
+} */
