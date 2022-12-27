@@ -1,20 +1,19 @@
 function getApiGitHub() {
-  fetch('https://api.github.com/users/OscarYopan/starred')
-    .then(async res => {
-      if (!res.ok) {
-        throw new Error(res.status)
-      }
+  fetch('https://api.github.com/users/OscarYopan/starred').then(async res => {
+    if (!res.ok) {
+      throw new Error(res.status)
+    }
 
-      var data = await res.json()
+    var data = await res.json()
 
-      data.map(item => {
-        const portifolioContainer = document.querySelector(
-          '.portifolio-container'
-        )
-        const project = document.createElement('div')
-        project.classList.add('project')
+    data.map(item => {
+      const portifolioContainer = document.querySelector(
+        '.portifolio-container'
+      )
+      const project = document.createElement('div')
+      project.classList.add('project')
 
-        project.innerHTML = `
+      project.innerHTML = `
           <iframe src="${item.homepage}" frameborder="0"></iframe>
           <div class="shade">
             <div class="icons">
@@ -32,10 +31,10 @@ function getApiGitHub() {
           </div>
         `
 
-        portifolioContainer.appendChild(project)
-      })
+      portifolioContainer.appendChild(project)
     })
-    .catch(e => console.log(e))
+  })
+  // .catch(e => console.log(e))
 }
 
 getApiGitHub()

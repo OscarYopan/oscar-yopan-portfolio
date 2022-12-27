@@ -34,18 +34,18 @@ function fixNav() {
 //   backToTop()
 // })
 
-//*************************** Section Height Defination ************
-sectionHeight()
+//*************************** Height &  Width ************
+// sectionHeight()
 
-function sectionHeight() {
-  const height =
-    window.innerHeight ||
-    document.documentElement.clientHeight ||
-    document.body.clientHeight
+// function sectionHeight() {
+//   const height =
+//     window.innerHeight ||
+//     document.documentElement.clientHeight ||
+//     document.body.clientHeight
 
-  const width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth
-  console.log('H: ' + height, ', W: ' + width)
-}
+//   const width =
+//     window.innerWidth ||
+//     document.documentElement.clientWidth ||
+//     document.body.clientWidth
+//     console.log('H: ' + height, ', W: ' + width)
+// }
