@@ -11,7 +11,7 @@
   --title-color: #F2F1F3;
   --text-color: #BCBAC4;
   --input-color: #211D35;
-  --body-color: #1916274f;
+  --body-color: #191627;
   --container-color: #211D35;
   --scroll-bar-color: #716C89;
   --scroll-thumb-color: #545167;
@@ -80,7 +80,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(25, 22, 39, 0.6);
 }
 
 .swiper-slide .shade h5 {
