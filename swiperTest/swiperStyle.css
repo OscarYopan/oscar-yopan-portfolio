@@ -11,7 +11,7 @@
   --title-color: #F2F1F3;
   --text-color: #BCBAC4;
   --input-color: #211D35;
-  --body-color: #191627;
+  --body-color: #1916274f;
   --container-color: #211D35;
   --scroll-bar-color: #716C89;
   --scroll-thumb-color: #545167;
@@ -24,17 +24,20 @@ body {
 }
 
 body {
-  background: #eee;
+  background: #222;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
 .swiper-slide {
