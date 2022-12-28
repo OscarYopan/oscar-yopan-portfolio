@@ -341,8 +341,8 @@ body{
 }
 
 .portifolio .portifolio-container .project {
-  height: 225px;
-  width: 400px;
+  height: 337.5px;
+  width: 600px;
   border: none;
   border-radius: 2rem;
   background-color: var(--first-color-lighter);
