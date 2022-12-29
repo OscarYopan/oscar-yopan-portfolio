@@ -1,0 +1,433 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    /*========== Colors ==========*/
+    /* HSL color mode */
+    --first-color: #6E57E0;
+    --first-color-alt: #5A43CB;
+    --first-color-lighter: #C1B6FC;
+    --text-color-light: #A19FAD;
+
+    /* Dark Theme */
+    --first-color-second: #100E1B;
+    --title-color: #F2F1F3;
+    --text-color: #BCBAC4;
+    --input-color: #211D35;
+    --body-color: #191627;
+    --container-color: #211D35;
+    --scroll-bar-color: #716C89;
+    --scroll-thumb-color: #545167;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--body-color);
+}
+
+.nav {
+  position: fixed;
+  background-color: var(--body-color);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: var(--title-color);
+  transition: all .3s ease-in-out;
+}
+
+.nav-container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav #logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav .logo a {
+  font-size: 3rem;
+  background-size: 300%;
+  background-image: linear-gradient(45deg, var(--first-color), var(--first-color-alt), var(--first-color-lighter), var(--first-color-lighter), var(--first-color-alt), var(--first-color));
+  animation: textAnimation 5s linear infinite;
+  display: inline-block;
+  color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes textAnimation {
+  to {
+    background-position: 300% center;
+  }
+}
+
+.nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  transition: all .3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  padding: .7rem 1.5rem;
+  transition: all .3s ease-in-out;
+}
+
+.nav.active {
+  background-color: var(--container-color);
+  box-shadow: 0 .2rem 1rem rgb(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: var(--title-color);
+}
+
+.nav.active .nav-container {
+  padding: 1rem 0;
+}
+
+.nav a.current {
+  color: var(--first-color);
+}
+
+.nav a:hover {
+  color: var(--text-color-light);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+}
+
+.home .social {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+
+.home .social a {
+  text-decoration: none;
+  margin: .5rem 0;
+}
+
+.home .social a i {
+  text-decoration: none;
+  color: var(--first-color-alt);
+}
+
+.home .social a i:hover {
+  transform: scale(1.2);
+}
+
+.home .me {
+  max-width: 40rem;
+  margin: 0 8rem;
+  color: var(--text-color);
+}
+
+.home .me .title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--title-color);
+}
+
+.home .me .subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.home .me .presentation {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+  text-align: justify;
+}
+
+.home .oscar-pic {
+  height: 30rem;
+  width: 30rem;
+  background-image: url(../../assets/img/oscar.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: relative;
+}
+
+.home .oscar-pic::before {
+  content: ' ';
+  height: 34rem;
+  width: 34rem;
+  background-color: var(--first-color);
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  z-index: -10;
+  border-radius: 20% 80% 11% 89% / 65% 40% 60% 35%;
+  animation: rotation 3s infinite ease-in;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10rem;
+}
+
+.about .title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.about .subtitle {
+  font-size: 2rem;  
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .oscar-photo {
+  height: 30rem;
+  width: 30rem;
+  background-image: url(../../assets/img/perfil.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 8rem;
+}
+
+.about .oscar-photo::before {
+  content: ' ';
+  height: 34rem;
+  width: 34rem;
+  background-color: var(--first-color);
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  z-index: -1;
+  border-radius: 20% 80% 11% 89% / 65% 40% 60% 35%;
+  transform: rotate(-90deg);
+}
+
+.about .me {
+  max-width: 40rem;
+  margin: 0 8rem;
+  color: var(--text-color);
+}
+
+.about .me .presentation {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+  text-align: justify;
+}
+
+.skills {
+  height: 100vh;
+  width: 100%;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.skills h1 {
+  color: var(--title-color);
+  font-size: 4rem;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 60rem;
+  background-color: var(--container-color);
+  border-radius: 50% 50% 8% 92% / 55% 90% 10% 45%;
+}
+
+.skills .skill {
+  text-align: center;
+  padding: 2rem;
+}
+
+.skills .skill h4 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.skills .fa-brands {
+  font-size: 15rem;
+  color: var(--first-color-alt);
+}
+
+.portifolio {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--container-color);
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.portifolio h1 {
+  color: var(--title-color);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.portifolio p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.portifolio p a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.portifolio p a:hover {
+  color: var(--first-color-alt);
+}
+
+.portifolio .portifolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 10rem;
+  background-color: var(--first-color-second);
+  border: none;
+}
+
+.portifolio .portifolio-container .project {
+  height: 337.5px;
+  width: 600px;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--first-color-lighter);
+  margin: 2rem;
+  position: relative;
+}
+
+.portifolio .portifolio-container .project iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.portifolio .portifolio-container .project .shade {
+  height: 40%;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 2rem 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portifolio .portifolio-container .project .shade h5 {
+  font-size: 2rem;
+  color: var(--title-color);
+  text-align: left;
+  margin: 1rem;
+}
+
+.portifolio .portifolio-container .project .shade p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 1rem;
+  text-align: left;
+}
+
+.portifolio .portifolio-container .project .shade a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.portifolio .portifolio-container .project .shade .icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.portifolio .portifolio-container .project .shade .icon .fa-desktop {
+  margin-right: 1rem;
+}
+
+.portifolio .portifolio-container .project .shade .icon i:hover {
+  color: var(--text-color);
+}
+
+.portifolio .portifolio-container .project .shade .icon i:active {
+  transform: scale(1.1);
+}
+
+/* ----------- Multiples Uses Stuffs -----------*/
+
+/* button */
+.button {
+  background-color: var(--first-color);
+  padding: 1.5rem 3rem;
+  font-family: inherit;
+  color: var(--text-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:active {
+  opacity: 90%;
+  color: var(--title-color);
+}
