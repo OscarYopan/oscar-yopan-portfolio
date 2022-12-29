@@ -49,3 +49,12 @@ function fixNav() {
 //     document.body.clientWidth
 //     console.log('H: ' + height, ', W: ' + width)
 // }
+
+//*************************** Swiper ************
+var swiper = new Swiper('.mySwiper', {
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+})
