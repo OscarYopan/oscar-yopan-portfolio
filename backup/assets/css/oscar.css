@@ -334,13 +334,40 @@ body{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0 10rem;
+  width: 600px;
+  height: 400px;
   background-color: var(--first-color-second);
   border: none;
 }
 
-.swiper .swiper-wrapper .project {
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .swiper .swiper-wrapper .swiper-slide {
   height: 337.5px;
   width: 600px;
   border: none;
@@ -348,15 +375,15 @@ body{
   background-color: var(--first-color-lighter);
   margin: 2rem;
   position: relative;
-}
+} */
 
-.swiper .swiper-wrapper .project iframe {
+.swiper .swiper-wrapper .swiper-slide iframe {
   height: 100%;
   width: 100%;
   border-radius: 2rem;
 }
 
-.swiper .swiper-wrapper .project .shade {
+.swiper .swiper-wrapper .swiper-slide .shade {
   height: 40%;
   width: 100%;
   border: none;
@@ -368,26 +395,26 @@ body{
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.swiper .swiper-wrapper .project .shade h5 {
+.swiper .swiper-wrapper .swiper-slide .shade h5 {
   font-size: 2rem;
   color: var(--title-color);
   text-align: left;
   margin: 1rem;
 }
 
-.swiper .swiper-wrapper .project .shade p {
+.swiper .swiper-wrapper .swiper-slide .shade p {
   font-size: 1.2rem;
   color: var(--text-color);
   margin: 1rem;
   text-align: left;
 }
 
-.swiper .swiper-wrapper .project .shade a {
+.swiper .swiper-wrapper .swiper-slide .shade a {
   text-decoration: none;
   color: var(--first-color);
 }
 
-.swiper .swiper-wrapper .project .shade .icon {
+.swiper .swiper-wrapper .swiper-slide .shade .icon {
   font-size: 2rem;
   color: var(--first-color);
   position: absolute;
@@ -396,15 +423,15 @@ body{
   cursor: pointer;
 }
 
-.swiper .swiper-wrapper .project .shade .icon .fa-desktop {
+.swiper .swiper-wrapper .swiper-slide .shade .icon .fa-desktop {
   margin-right: 1rem;
 }
 
-.swiper .swiper-wrapper .project .shade .icon i:hover {
+.swiper .swiper-wrapper .swiper-slide .shade .icon i:hover {
   color: var(--text-color);
 }
 
-.swiper .swiper-wrapper .project .shade .icon i:active {
+.swiper .swiper-wrapper .swiper-slide .shade .icon i:active {
   transform: scale(1.1);
 }
 
