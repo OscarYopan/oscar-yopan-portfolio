@@ -1,8 +1,33 @@
+// var swiper = new Swiper('.mySwiper', {
+//   spaceBetween: 30,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true
+//   }
+// })
+
+// Slides per view
+// var swiper = new Swiper('.mySwiper', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true
+//   }
+// })
+
+// Infinite loop
 var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   }
 })
 
