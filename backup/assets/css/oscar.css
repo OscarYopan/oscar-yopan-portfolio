@@ -308,31 +308,31 @@ body{
   padding-top: 10rem;
 }
 
-.swiper {
-  width: 600px;
-  height: 400px;
-  text-align: center;
-}
-
-.swiper h1 {
+.portifolio h1 {
   color: var(--title-color);
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
-.swiper p {
+.portifolio p {
   font-size: 1.6rem;
   color: var(--text-color);
   margin-bottom: 2rem;
 }
 
-.swiper p a {
+.portifolio p a {
   text-decoration: none;
   color: var(--first-color);
 }
 
-.swiper p a:hover {
+.portifolio p a:hover {
   color: var(--first-color-alt);
+}
+
+.swiper {
+  width: 600px;
+  height: 400px;
+  text-align: center;
 }
 
 .swiper-wrapper {
