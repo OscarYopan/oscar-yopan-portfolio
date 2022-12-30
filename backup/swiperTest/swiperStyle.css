@@ -35,9 +35,36 @@ body {
   justify-content: center;
 }
 
+.portifolio {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.portifolio h1 {
+  color: var(--title-color);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.portifolio p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.portifolio p a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.portifolio p a:hover {
+  color: var(--first-color-alt);
+}
+
 .swiper {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {

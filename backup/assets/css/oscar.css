@@ -329,6 +329,19 @@ body{
   color: var(--first-color-alt);
 }
 
+.portifolio .swipper-window {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portifolio .swiper-window iframe {
+  height: 100%;
+  width: 100%;
+}
+
 .swiper {
   width: 600px;
   height: 400px;
