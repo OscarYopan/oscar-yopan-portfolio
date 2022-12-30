@@ -300,11 +300,18 @@ body{
   color: var(--first-color-alt);
 }
 
-.swiper {
-  width: 100%;
+.portifolio {
   height: 100vh;
+  width: 100vw;
+  background-color: var(--container-color);
   text-align: center;
-  margin-bottom: 10rem;
+  padding-top: 10rem;
+}
+
+.swiper {
+  width: 600px;
+  height: 400px;
+  text-align: center;
 }
 
 .swiper h1 {
@@ -328,10 +335,9 @@ body{
   color: var(--first-color-alt);
 }
 
-.swiper-wraper {
-  display: inline;
-  width: 600px;
-  height: 400px;
+.swiper-wrapper {
+  position: relative;
+  height: 300px;
 }
 
 .swiper-slide {
