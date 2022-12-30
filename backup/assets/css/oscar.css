@@ -373,12 +373,12 @@ body{
   align-items: center;
 }
 
-/* .swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
 
 .swiper-slide iframe {
   height: 100%;

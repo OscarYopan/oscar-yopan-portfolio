@@ -35,4 +35,4 @@ function getApiGitHub() {
   // .catch(e => console.log(e))
 }
 
-getApiGitHub()
+// getApiGitHub()
